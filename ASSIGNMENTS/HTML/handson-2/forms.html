@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- http://127.0.0.1:5500/HTML/forms.html?
+fname=Mahesh&Lname=Jeggam
+&gender=male&
+password=mahesh123&
+birthdate=2001-07-15&
+phone=9347884154&
+email=jeggammahesh15720%40gmail.com&
+c=c&java=java&python=python&
+role=fullstack&
+textare=currently+studying+B.tech+final+year+cse+&
+salary=1000000&
+submit=Submit -->
+<body  >
+    <h1>FORMS</h1>
+    <form> 
+        <label for="fname">ENTER FIRST NAME </label>
+        <input type="text" name="fname" id="fname"/><br>
+        <label for="lname">ENTER LAST NAME </label>
+        <input type="text" name="Lname" id="lname"/>
+        <br>
+        <!-- radio buttons.......................... -->
+        ENTER THE GENDER:
+        <input type="radio" name="gender" id="male" value="male"placeholder="mahesh"/>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female"value="female"/>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="other"value="other"/>
+        <label for="other">other</label>
+        <br>
+            <label for="password">ENTER THE PASSWORD:</label>
+            <input type="password" name="password" id="password"required/><br>
+           
+            <label for="date"> ENTER YOUR BIRTH_DATE:</label>
+            <input type="date" name="birthdate" id="date"/><br>
+            <label for="phone"> ENTER YOUR NUMBER:</label>
+            <input type="tel" name="phone" id="phone"required maxlength="10"/><br>
+            <label for="email"> ENTER YOUR MAIL-ID:</label>
+            <input type="email" name="email" id="email"/><br>
+          <!-- .................  CHECK BOX..................... -->
+            SKILLS:<br>
+            <input type="checkbox" name="c" id="box"value="c"/>
+            <label for="box">C</label><br>
+            <input type="checkbox" name="java" id="box"value="java"/>
+            <label for="box">JAVA</label><br>
+            <input type="checkbox" name="python" id="box"value="python"/>
+            <label for="box">PYTHON</label><br>
+            <input type="checkbox" name="c++" id="box"value="c++"/>
+            <label for="box">C++</label><br>
+            
+            <!-- ............SELECT TAG...... -->
+            <labe for="role">Select role u want</labe>
+            <select name="role" id="role" size="" placeholder="select"multipe>
+                <option value="front end">frontend</option>
+                <option value="back end">backend</option>
+                <option value="fullstack">fullstack</option>
+                <option value="data engineer">data engineer</option>
+            </select><br>
+            <br>
+             <textarea name="textare"id="text" rows="5"cols="50"></textarea>
+<br>
+            <label for="salary">expected package:</label>
+            <input type="number" name="salary" id="salary"/>
+        <hr>
+        <label for="summit"></label>
+        <input type="submit" name="submit" id="submit"/>
+        <input type="reset" name="reset" id="reset"/>
+    </form>
+    <h1>TABLES</h1>
+    <a href="./tables.html">go to table</a>
+</body>
+</html>
